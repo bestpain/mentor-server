@@ -1,5 +1,5 @@
 let mongoose=require('mongoose');
-mongoose.connect('mongodb://localhost/Mentors', {useNewUrlParser: true});
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds139921.mlab.com:39921/heroku_d5vk6b9t', {useNewUrlParser: true});
 
 let db=mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
