@@ -4,7 +4,7 @@ const cors=require('cors')
 app.use(cors())
 //import mongo related files
 const mongoDb=require('./db/mongo')
-const port=8000;
+const port=process.env.PORT || 8000;
 app.use(express.json())
 
 app.get('/mentors',async (req,res)=>{
